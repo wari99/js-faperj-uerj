@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Exercicio PROMPT</title>
+  </head>
+  
+  <body>
+    <script>
+		var digitou;
+        var aux;
+        
+        digitou = prompt("Digite: ");
+        document.write(digitou);
+        
+        aux = digitou.trim();
+        
+        document.write("<br> Com espacos: " + digitou.length + "<br>");
+        
+       	document.write("<br> Sem espacos: " + digitou.trim().length + "<br>");
+       	document.write("<br> Sem espacos: " + aux.length + "<br>");
+        
+        document.write("<br> is Nan? " + isNaN(digitou) + "<br>");
+        
+        var procura = prompt("Procurar termo: ");
+        document.write("<br>O termo '" + procura + "' esta presente? " + digitou.includes(procura));
+        
+        document.write("<br><br> Em letras maiusculas: " + digitou.toUpperCase());
+        document.write("<br><br> Em letras minusculas: " + digitou.toLowerCase());
+    </script>
+  </body>
+</html> 
